@@ -40,3 +40,5 @@ def ask_for_password():
     while endgame != 1:
         print('Averigua el número entre 1 y 100')
         entered = input()
+        
+# Falta hacer lo del random ...
