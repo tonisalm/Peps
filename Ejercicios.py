@@ -29,16 +29,19 @@ def print_spaced(texto):
             print(x, end=' ')
         c += 1
 
-print_spaced('tonikun')
+#print_spaced('tonikun')
 
 #Ejercicio 7
 
 def ask_for_password():
     import random
     numero = random.radint(1,100)
-    endgame = 0
-    while endgame != 1:
-        print('Averigua el número entre 1 y 100')
-        entered = input()
+    entrada = int(input('Adivina un número entre 1 y 100'))
+    while entrada != numero:
+        if entrada > numero:
+            int(input('¡Menos!'))
+        else:
+            int(input('¡Más!'))
+    
         
 # Falta hacer lo del random ...
